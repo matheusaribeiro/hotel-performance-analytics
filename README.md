@@ -11,7 +11,7 @@
 
 **[📊 Dashboard](#-the-dashboard) · [💡 Key insights](#-key-insights) · [🛠️ How it was built](#-how-it-was-built) · [📁 Files](#-repository-structure)**
 
-📑 **[Project presentation (PDF, 15 slides)](docs/Hotel-Performance-Analytics-Deck.pdf)**
+📑 **[Project presentation (PDF, 15 slides)](Hotel-Performance-Analytics-Deck.pdf)**
 
 </div>
 
@@ -156,15 +156,15 @@ At first, Revenue + Lost Revenue did not equal Total Booking Value. I traced the
 ## 📁 Repository structure
 
 ```
-├── Hotel Performance Analytics.xlsx   # Workbook: queries, data model, measures, dashboard
-├── data/Hotel_Database.xlsx           # Source data (synthetic)
-├── power-query/                       # M code for each query
-├── dax/measures.md                    # All DAX measures
-├── docs/                              # Project presentation (PDF)
-└── images/                            # Screenshots used in this README
+├── Hotel Performance Analytics.xlsx       # Workbook: queries, data model, measures, dashboard
+├── Hotel_Database.xlsx                    # Source data (synthetic)
+├── Hotel-Performance-Analytics-Deck.pdf   # Project presentation (15 slides)
+├── power-query/                           # M code for each query
+├── dax/measures.md                        # All DAX measures
+└── images/                                # Screenshots used in this README
 ```
 
-**To explore it:** download the workbook and open it in Excel for Windows (Power Pivot is not available on Mac or Excel Online; the *Data Model* sheet shows the diagram and measures for those viewers). To refresh, open *Data → Queries & Connections* and point each query's source path to your local copy of `data/Hotel_Database.xlsx`.
+**To explore it:** download the workbook and open it in Excel for Windows (Power Pivot is not available on Mac or Excel Online; the *Data Model* sheet shows the diagram and measures for those viewers). To refresh, open *Data → Queries & Connections* and point each query's source path to your local copy of `Hotel_Database.xlsx`.
 
 ---
 

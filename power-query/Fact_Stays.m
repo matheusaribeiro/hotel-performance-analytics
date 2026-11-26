@@ -1,7 +1,7 @@
 // Power Query (M) — Fact_Stays
-// Exported from the workbook. To refresh, point File.Contents to your local copy of data/Hotel_Database.xlsx.
+// Exported from the workbook. To refresh, point File.Contents to your local copy of Hotel_Database.xlsx.
 let
-    Source = Excel.Workbook(File.Contents("C:\path\to\data\Hotel_Database.xlsx"), null, true),
+    Source = Excel.Workbook(File.Contents("C:\path\to\Hotel_Database.xlsx"), null, true),
     Stays_Sheet = Source{[Item="Stays",Kind="Sheet"]}[Data],
     #"Promoted Headers" = Table.PromoteHeaders(Stays_Sheet, [PromoteAllScalars=true]),
     #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"StayID", type text}, {"GuestID", type text}, {"RoomID", type text}, {"BookingDate", type date}, {"CheckInDate", type date}, {"CheckOutDate", type date}, {"NumGuests", Int64.Type}, {"Channel", type text}, {"PaymentMethod", type text}, {"Discount", Percentage.Type}, {"Status", type text}}),

@@ -1,7 +1,7 @@
 // Power Query (M) — Dim_Guests
-// Exported from the workbook. To refresh, point File.Contents to your local copy of data/Hotel_Database.xlsx.
+// Exported from the workbook. To refresh, point File.Contents to your local copy of Hotel_Database.xlsx.
 let
-    Source = Excel.Workbook(File.Contents("C:\path\to\data\Hotel_Database.xlsx"), null, true),
+    Source = Excel.Workbook(File.Contents("C:\path\to\Hotel_Database.xlsx"), null, true),
     Guests_Sheet = Source{[Item="Guests",Kind="Sheet"]}[Data],
     #"Promoted Headers" = Table.PromoteHeaders(Guests_Sheet, [PromoteAllScalars=true]),
     #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"BirthDate", type date}, {"Age", Int64.Type}, {"City", type text}, {"State", type text}, {"Region", type text}, {"TripPurpose", type text}, {"Email", type text}, {"SignUpDate", type date}, {"GuestID", type text}, {"GuestName", type text}, {"Gender", type text}}),
