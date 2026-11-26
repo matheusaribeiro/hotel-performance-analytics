@@ -11,6 +11,8 @@
 
 **[📊 Dashboard](#-the-dashboard) · [💡 Key insights](#-key-insights) · [🛠️ How it was built](#-how-it-was-built) · [📁 Files](#-repository-structure)**
 
+📑 **[Project presentation (PDF, 15 slides)](docs/Hotel-Performance-Analytics-Deck.pdf)**
+
 </div>
 
 ---
@@ -158,6 +160,7 @@ At first, Revenue + Lost Revenue did not equal Total Booking Value. I traced the
 ├── data/Hotel_Database.xlsx           # Source data (synthetic)
 ├── power-query/                       # M code for each query
 ├── dax/measures.md                    # All DAX measures
+├── docs/                              # Project presentation (PDF)
 └── images/                            # Screenshots used in this README
 ```
 
