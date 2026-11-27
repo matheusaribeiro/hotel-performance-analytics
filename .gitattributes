@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Power Query (M) scripts: keep them out of the language bar (GitHub reads .m as Wolfram/MATLAB)
+*.m linguist-detectable=false
